@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.section-one,
+.section-two {
+  width: 400px; /* Largura */
+  height: 150px; /* Altura */
+  padding: 10px; /* padding: 10px (cima) 15px (direita) 20px (baixo) 30px (esquerdo) */
+  margin: 0 auto;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.section-one {
+  background-color: darkgray; /* Cor de Fundo */
+  border: 5px solid black; /* Borda lado neutro*/
+  border-top-width: 10px;
+  border-right-width: 15px;
+  border-left-width: 20px;
+  border-bottom-width: 25px;
+}
+.section-two {
+  background-color: antiquewhite;
+  border: 5px solid;
+  border-top-color: red;
+  border-right-color: blue;
+  border-left-color: green;
+  border-bottom-color: yellow;
+}

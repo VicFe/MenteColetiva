@@ -4,10 +4,14 @@ body {
   text-align: center;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .section-one,
 .section-two {
-  width: 400px; /* Largura */
-  height: 150px; /* Altura */
+  width: 500px; /* Largura */
+  height: 200px; /* Altura */
   padding: 10px; /* padding: 10px (cima) 15px (direita) 20px (baixo) 30px (esquerdo) */
   margin: 0 auto;
   margin-top: 10px;
@@ -17,7 +21,7 @@ body {
 
 .section-one {
   background-color: darkgray; /* Cor de Fundo */
-  border: 5px solid black; /* Borda lado neutro*/
+  border: solid black; /* Borda lado neutro*/
   border-top-width: 10px;
   border-right-width: 15px;
   border-left-width: 20px;
@@ -25,9 +29,36 @@ body {
 }
 .section-two {
   background-color: antiquewhite;
-  border: 5px solid;
+  border: 10px solid;
   border-top-color: red;
   border-right-color: blue;
   border-left-color: green;
   border-bottom-color: yellow;
+}
+
+/* Exemplo de display:block */
+.bloco {
+  display: block;
+  background-color: lightblue;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+/* Exemplo de display:inline */
+.linha {
+  display: inline;
+  background-color: lightgreen;
+  padding: 5px;
+  margin: 5px;
+}
+
+/* Exemplo de display:inline-block */
+.linha-bloco {
+  display: inline-block;
+  background-color: lightcoral;
+  padding: 5px;
+  margin: 5px;
+  margin-bottom: 10px;
+  width: 120px; /* inline-block permite largura */
+  height: 40px; /* e altura */
 }

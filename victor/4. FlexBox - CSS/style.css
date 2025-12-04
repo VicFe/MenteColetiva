@@ -1,0 +1,131 @@
+/* ===== Configurações gerais ===== */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center; /* Centraliza textos */
+  padding: 20px;
+}
+
+h2 {
+  margin-top: 40px;
+}
+
+/* ========================================================
+   DESAFIO 1 — MENU HORIZONTAL
+   ======================================================== */
+
+.menu {
+  display: flex; /* Ativa o Flexbox */
+  justify-content: space-around; /* Espaça os itens igualmente */
+  align-items: center; /* Centraliza verticalmente */
+  background: #0059ff;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 8px;
+}
+
+.menu a:hover {
+  /* :hover = efeito quando o mouse passa por cima */
+  background: #003ea5;
+  border-radius: 5px;
+}
+
+/* ========================================================
+   DESAFIO 2 — GALERIA DE IMAGENS
+   ======================================================== */
+
+.galeria {
+  display: flex; /* Ativa Flexbox */
+  flex-wrap: wrap; /* Permite quebrar linha */
+  justify-content: center; /* Centraliza as imagens */
+  gap: 10px; /* Espaçamento entre itens */
+  margin: 20px;
+}
+
+.galeria img {
+  width: 120px;
+  height: 120px;
+  border: 2px solid #333;
+}
+
+/* ========================================================
+   DESAFIO 3 — CARTÃO DE PERFIL
+   ======================================================== */
+
+.card-perfil {
+  width: 220px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+
+  display: flex; /* Ativa Flexbox */
+  flex-direction: column; /* Coloca os itens em coluna (um embaixo do outro) */
+  align-items: center; /* Centraliza horizontalmente */
+  gap: 10px; /* Espaço entre elementos */
+}
+
+.foto {
+  width: 80px;
+  height: 80px;
+  background-image: url("eu foto grande.jpeg");
+  background-size: cover; /* Corta a imagem para caber certinho */
+  background-position: top; /* Centraliza para cima*/
+  border-radius: 50%;
+}
+
+button {
+  padding: 8px 12px;
+  background: #0059ff;
+  color: white;
+  border: none;
+  cursor: pointer; /* Cursor vira "mãozinha" ao passar */
+}
+
+button:hover {
+  background: #003ea5; /* Efeito ao passar o mouse */
+}
+
+/* ========================================================
+   DESAFIO 4 — LAYOUT DE PÁGINA
+   ======================================================== */
+
+.pagina {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+
+  display: flex; /* Flexbox */
+  flex-direction: column; /* Itens em coluna (header, main, footer) */
+}
+
+.header,
+.footer {
+  background: #0059ff;
+  color: white;
+  padding: 15px;
+}
+
+.principal {
+  flex: 1; /* Ocupa o espaço disponível */
+  display: flex; /* Cria duas colunas */
+  gap: 10px; /* Espaço entre as colunas */
+  margin-top: 10px;
+}
+
+.conteudo {
+  flex: 3; /* Coluna maior */
+  background: #e9e9e9;
+  padding: 10px;
+}
+
+.sidebar {
+  flex: 1; /* Coluna menor */
+  background: #d1d1d1;
+  padding: 10px;
+}

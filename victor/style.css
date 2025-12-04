@@ -1,15 +1,36 @@
 body {
-  background-color:darkgray;
+  background-color: darkgray;
+  font-family: Arial, sans-serif;
 }
 
-.padrao {
-  max-width: 500px;
-  margin: 0 auto;  
-  width: 100%;
+form {
   background-color: aliceblue;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
 }
 
 .legenda {
-  font-size: 50px;
-  font-style: Arial;
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-align: center;
 }

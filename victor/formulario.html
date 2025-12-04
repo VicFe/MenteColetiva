@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Formulario</title>
+    <title>Formulário</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
+
   <body>
-    <form action="/sobre_min.html" method="POST" class="padrao">
-      <fieldse>
+    <form action="/sobre_min.html" method="POST">
+      <fieldset>
         <legend class="legenda">Inscrição da Faculdade</legend>
 
         <label for="nome">Nome:</label>
@@ -16,59 +17,60 @@
           type="text"
           id="nome"
           name="nome"
-          class="padrao"
           placeholder="Exemplo: Rei Leão"
           required
         />
+
         <label for="email">Email:</label>
         <input
           type="email"
           id="email"
           name="email"
-          class="padrao"
           placeholder="Exemplo: exemplo@gmail.com"
           required
         />
+
         <label for="idade">Idade:</label>
         <input
           type="number"
           id="idade"
           name="idade"
-          class="padrao"
           placeholder="Exemplo: 18"
         />
+
         <label for="telefone">Telefone:</label>
         <input
           type="tel"
           id="telefone"
           name="telefone"
-          class="padrao"
           placeholder="Exemplo: (99) 9 9999-9999"
         />
 
         <p>Turno desejado:</p>
         <input type="radio" id="manha" name="turno" value="manha" />
         <label for="manha">Manhã</label>
+
         <input type="radio" id="tarde" name="turno" value="tarde" />
         <label for="tarde">Tarde</label>
-        <input type="radio" id="noite" name="turno" value="noite" />
-        <label for="noite">Tarde</label>
 
-        <p>Curso de Interrese:</p>
+        <input type="radio" id="noite" name="turno" value="noite" />
+        <label for="noite">Noite</label>
+
+        <p>Curso de Interesse:</p>
         <label for="curso">Curso</label>
         <select id="curso" name="curso">
           <option value=""></option>
           <option value="full-stack">Full-Stack</option>
           <option value="front-end">Front-End</option>
-          <option value="back-end">back-end</option>
+          <option value="back-end">Back-End</option>
         </select>
 
-        <p>Horario da Aula:</p>
-        <label for="horario"></label>
-        <input type="time" id="tempo" name="tempo" class="padrao" />
+        <p>Horário da Aula:</p>
+        <label for="tempo">Horário</label>
+        <input type="time" id="tempo" name="tempo" />
 
         <p>Deixe um comentário:</p>
-        <label for="comentraio"></label>
+        <label for="comentario">Comentário</label>
         <textarea
           id="comentario"
           name="comentario"
@@ -76,11 +78,13 @@
           cols="50"
           placeholder="Escreva aqui"
         ></textarea>
-        <br />
+
+        <br /><br />
+
         <label for="termos">Aceita os termos:</label>
         <input type="checkbox" id="termos" name="termos" />
-        <br />
-        <br />
+
+        <br /><br />
         <button type="submit">Enviar</button>
       </fieldset>
     </form>

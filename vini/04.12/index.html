@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pratica Formulario</title>
+    <style>
+      legend {
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" method="POST">
+      <fieldset>
+        <legend>Incrição academia</legend>
+
+        <label for="nome">Nome</label>
+        <input
+          type="text"
+          name="nome"
+          id="nome"
+          placeholder="Exemplo: Rei Leão"
+          required
+        />
+
+        <label for="email">E-mail</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Exemplo: Reileao@gmail.com"
+          required
+        />
+        <br />
+        <label for="telefone">Telefone</label>
+        <input type="tel" name="telefone" id="telefone" />
+
+        <label for="idade">Idade</label>
+        <input type="number" name="idade" id="idade" />
+
+        <h3>Turno desejado</h3>
+        <label for="manha">Manhã</label>
+        <input type="checkbox" name="mana" id="manha" />
+
+        <label for="tarde">Tarde</label>
+        <input type="checkbox" name="tarde" id="tarde" />
+
+        <label for="noite">Noite</label>
+        <input type="checkbox" name="noite" id="noite" />
+
+        <label for="tempodisponivel">Tempo disponivel</label>
+        <input type="time" name="tempodisponivel" id="tempodisponivel" />
+        <br />
+
+        <h3>Planos disponiveis</h3>
+        <select id="planos" name="planos">
+          <option value="">Selecione</option>
+          <option value="">Plano iniciante</option>
+          <option value="">Plano intermediario</option>
+          <option value="">Plano plus</option>
+        </select>
+
+        <p>Deixe suas observações</p>
+        <textarea
+          name="comentario"
+          id="comentario"
+          rows="4"
+          cols="50"
+          placeholder="Escreva aqui"
+        >
+        </textarea>
+
+        <label for="aceite">Aceite os termos</label>
+        <input type="checkbox" name="aceite" id="aceite" />
+        <br />
+        <button>Enviar inscrição</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -15,7 +15,7 @@ label {
   margin-top: 10px;
 }
 
-input,
+.quest,
 select,
 textarea {
   width: 100%;

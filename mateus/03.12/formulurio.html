@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      fieldset {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="http://127.0.0.1:5500/Team_Friends/index.html" method="POST">
+      <!--form: formulario, coletar dados do usuario-->
+      <!--action:define pra onde os dados foram enviados, method:define como dos dados são enviados
+        get= recuperar dado e post enviar dados-->
+      <fieldset>
+        <legend>usuario</legend>
+        <label for="nome">nome:</label>
+        <!--label: é pra melhorar a aceçibilidade-->
+        <input type="text" id="nome" name="nome" />
+        <label for="senha">senha:</label>
+        <input type="password" id="nome" name="senha" />
+      </fieldset>
+      <fieldset>
+        <legend>dados</legend>
+        <label for="email">email:</label>
+        <input type="email" id="nome" name="nome" />
+        <label for="idade">idade:</label>
+        <input type="number" id="number" name="idade" />
+      </fieldset>
+      <button type="submit">EVIAR PORRA</button>
+    </form>
+  </body>
+</html>

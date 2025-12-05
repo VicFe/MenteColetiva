@@ -13,3 +13,6 @@ console.log(
   " na minha carteira, e moro em ",
   cidade
 );
+
+/* Como rodar: Primeiro entre no terminal com o caminho exato desse arquivo, 
+depois rode o comando "node script.js" no caso se for outro nome é so mudar*/

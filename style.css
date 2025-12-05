@@ -1,10 +1,14 @@
-/* Estilo simples para iniciantes — tudo centralizado */
-
 /* Reset básico */
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: Arial, sans-serif;
-  text-align: center; /* Centraliza praticamente tudo no site */
+  text-align: center;
+  background-color: #fafafa;
 }
 
 /* Cabeçalho */
@@ -14,52 +18,49 @@ header {
   padding: 20px;
 }
 
-/* Área dos cards */
+/* Cards */
 .caixa {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* Centraliza os cards */
-  gap: 15px;
+  flex-wrap: wrap; /* permite quebrar linha */
+  justify-content: center; /* centraliza */
+  gap: 15px; /* espaço entre itens */
   padding: 20px;
 }
 
-/* Card simples */
 .card {
   background-color: #f2f2f2;
   padding: 15px;
   border: 1px solid #ccc;
   width: 250px;
-  text-align: center; /* Centraliza o conteúdo dentro dos cards */
+  text-align: center;
 }
 
 /* Lista */
 ul {
   list-style: none;
-  padding-left: 0;
 }
 
-/* Links */
 a {
   text-decoration: none;
   color: #0059ff;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* efeito novo */
 }
 
-/* Seção "Como usar" */
+/* Sessão "Como usar" */
 .como-usar {
   padding: 20px;
   background-color: #e9e9e9;
   margin: 20px auto;
   border: 1px solid #ccc;
-  max-width: 600px; /* Para deixar bonito e centralizado */
-  text-align: left; /* Para os textos explicativos ficarem legíveis */
+  max-width: 600px;
+  text-align: left;
 }
 
 .como-usar ul {
-  text-align: left !important; /* Mantém os tópicos alinhados à esquerda */
+  text-align: left !important;
 }
 
 /* Rodapé */
@@ -68,4 +69,41 @@ footer {
   padding: 15px;
   background-color: #f2f2f2;
   margin-top: 20px;
+}
+
+/* ================================
+   RESPONSIVIDADE (NOVO)
+   ================================ */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .card {
+    width: 45%; /* 2 cards por linha */
+  }
+}
+
+/* Celular */
+@media (max-width: 576px) {
+  .card {
+    width: 90%; /* 1 card por linha */
+  }
+
+  body {
+    font-size: 14px; /* texto menor no celular */
+  }
+
+  .como-usar {
+    max-width: 95%; /* ocupa mais espaço no celular */
+  }
+}
+
+/* Celular pequeno */
+@media (max-width: 360px) {
+  body {
+    font-size: 13px; /* texto ainda menor */
+  }
+
+  .card {
+    width: 100%; /* ocupa toda a tela */
+  }
 }

@@ -1,36 +1,92 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>formulário</title>
     <style>
-      fieldset {
-        background-color: pink;
+      body {
+        background-color: darkgray; 
+        font-family: Arial, sans-serif;
+      }
+
+      form {
+        background-color: aliceblue;
+        max-width: 500px;
+        margin: 20px auto;
+        padding: 20px;
+        border: black solid 15px;
+      }
+
+      label {
+        display: block;
+        margin-top: 10px;
       }
     </style>
   </head>
+
   <body>
-    <form action="http://127.0.0.1:5500/Team_Friends/index.html" method="POST">
-      <!--form: formulario, coletar dados do usuario-->
-      <!--action:define pra onde os dados foram enviados, method:define como dos dados são enviados
-        get= recuperar dado e post enviar dados-->
+    <form action="">
       <fieldset>
-        <legend>usuario</legend>
-        <label for="nome">nome:</label>
-        <!--label: é pra melhorar a aceçibilidade-->
-        <input type="text" id="nome" name="nome" />
-        <label for="senha">senha:</label>
-        <input type="password" id="nome" name="senha" />
+        <legend>Mateus</legend>
+        <div>
+          <label for="nome">nome</label>
+          <input
+            type="text"
+            name="nome"
+            id="nome"
+            placeholder="Exemplo: Mateus"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="email">email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Exemplo: exemplo@gmail.com"
+            required
+          />
+        </div>
+
+        <div>
+          <label> <input type="radio" name="opcao" value="A" /> manhã </label>
+          <label> <input type="radio" name="opcao" value="B" /> tarde </label>
+          <label> <input type="radio" name="opcao" value="C" /> noite </label>
+        </div>
+
+        <div>
+          <label for="aceitar">aceitar</label>
+          <input type="checkbox" name="aceitar" id="aceitar" />
+        </div>
+
+        <div>
+          <select id="curso" name="curso" class="quest">
+            <option value=""></option>
+            <option value="opcao1">Full-Stack</option>
+            <option value="opcao2">Front-End</option>
+            <option value="opcao3">Back-End</option>
+          </select>
+        </div>
+
+        <div>
+          <label>o que você mais gosta:</label>
+          <textarea
+            id="comentario"
+            name="comentario"
+            rows="4"
+            cols="50"
+            placeholder="Escreva aqui"
+          ></textarea
+          >
+        </div>
+
+        <div>
+          <input type="submit" value="enviar formulário" />
+        </div>
       </fieldset>
-      <fieldset>
-        <legend>dados</legend>
-        <label for="email">email:</label>
-        <input type="email" id="nome" name="nome" />
-        <label for="idade">idade:</label>
-        <input type="number" id="number" name="idade" />
-      </fieldset>
-      <button type="submit">EVIAR PORRA</button>
     </form>
   </body>
 </html>

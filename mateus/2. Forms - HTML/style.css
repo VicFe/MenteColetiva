@@ -17,6 +17,7 @@ label {
 } 
 */
 
-body {
+fieldset {
     background-color: darkgray
+    font-family: comic, sans-serif;
 }

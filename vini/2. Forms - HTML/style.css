@@ -1,8 +1,8 @@
-fieldset {
+#campos {
   background-color: black;
   color: blue;
-   width: 100px;
-   
+  width: 50%;
+  font-size: 20px;
 }
 
 body {

@@ -4,6 +4,8 @@ Repositório criado para registrar toda a evolução do nosso grupo de estudos e
 
 Este espaço reúne todos os projetos desenvolvidos ao longo da formação, desde as primeiras páginas HTML até aplicações completas integrando front-end, back-end e banco de dados.
 
+Site: https://vicfe.github.io/MenteColetiva/
+
 ---
 
 ## 🎯 Objetivo

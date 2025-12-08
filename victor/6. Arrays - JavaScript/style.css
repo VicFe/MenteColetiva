@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+#lista {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+/* Caixa dos botões */
+.botoes {
+  display: flex; /* coloca tudo em linha */
+  flex-wrap: wrap; /* deixa quebrar linha */
+  justify-content: center; /* centraliza */
+  gap: 10px; /* espaço entre botões */
+}
+
+button {
+  padding: 10px;
+  border: 1px solid #333;
+  background: #eee;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ccc;
+}

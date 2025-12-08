@@ -1,0 +1,38 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: brown;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #0059ff;
+  color: white;
+  padding: 20px;
+}
+
+fieldset {
+  width: 50%;
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+legend {
+  font-size: 7px;
+}
+
+button {
+  margin: 10px;
+  font-size: 100px;
+  border: black solid;
+  padding: 10px;
+  font-family: fantasy;
+  background-color: red;
+}

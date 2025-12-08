@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="fonts.googleapis.com" rel="stylesheet" />
+    <title>Números</title>
+
+    <!-- Corrigido: puxar o CSS corretamente -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Usando a mágia do "DOM"</h1>
+    <h2>Juntamente com ajuda de seu parceiro o JavaScript</h2>
+
+    <!-- Botão com id para manipular no JS -->
+    <fieldset>
+      <legend>Não aperte</legend>
+      <button id="btn">Aperte</button>
+    </fieldset>
+    <script>
+      // pega o botão
+      const botao = document.getElementById("btn");
+
+      // adiciona evento de clique
+      botao.addEventListener("click", () => {
+        alert("O DOM funcionou!");
+      });
+    </script>
+
+    <!-- Puxando o script.js da mesma pasta -->
+    <script src="script.js"></script>
+  </body>
+</html>
